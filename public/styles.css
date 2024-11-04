@@ -1,0 +1,112 @@
+/* General layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Login form */
+  #login {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #username-form input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+  #username-form button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Chat interface */
+  #chat {
+    width: 100%;
+    max-width: 500px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Message list styling */
+  .message-list {
+    list-style-type: none;
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    margin: 0;
+  }
+  
+  /* Chat message styling */
+  .message {
+    margin: 8px 0;
+    padding: 8px 12px;
+    max-width: 75%;
+    border-radius: 15px;
+    position: relative;
+    font-size: 16px;
+  }
+  
+  /* Sent message bubble */
+  .message.sent {
+    background-color: #DCF8C6;
+    align-self: flex-end;
+    text-align: right;
+    margin-left: auto;
+  }
+  
+  /* Received message bubble */
+  .message.received {
+    background-color: #ffffff;
+    border: 1px solid #E6E6E6;
+    align-self: flex-start;
+    text-align: left;
+    margin-right: auto;
+  }
+  
+  /* Username styling within the message bubble */
+  .message strong {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Input area styling */
+  .input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  #message-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #send-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
